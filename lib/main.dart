@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:weather/routes.dart';
-import 'package:weather/src/pages/HomePage.page.dart';
-import 'package:weather/src/pages/SplashScreen.page.dart';
 
 void main() {
   runApp(const MyApp());

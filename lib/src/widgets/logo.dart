@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:weather/src/utils/constant.dart';
 
 class AppLogo extends StatelessWidget {
   const AppLogo({super.key});
@@ -13,8 +11,6 @@ class AppLogo extends StatelessWidget {
         'assets/images/tempest.jpeg',
         height: 100.0,
       ),
-      // child: const Icon(Icons.sunny_snowing,
-      //     size: 100.0, color: AppColors.textColor),
     );
   }
 }
