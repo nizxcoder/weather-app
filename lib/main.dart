@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:weather/routes.dart';
 import 'package:weather/src/pages/HomePage.page.dart';
+import 'package:weather/src/pages/SplashScreen.page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +14,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Weather App',
+      title: 'Tempest',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         fontFamily: 'Roboto',
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      defaultTransition: Transition.cupertino,
+      getPages: appRoutes,
     );
   }
 }
